@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to the Jungle</h1>
+    <button type="button" onclick="showData()">Click Me</button>
+    <script>
+        // let iNumEmployees = parseInt(prompt("How many employees? "));
+        // let asEmployees = new Array(iNumEmployees);
+        //used when you know how many times you wanna do ^
+
+        //.push says "add a new element to the end of the array"
+        function showData()
+        {
+            //create an array to store names
+            let asNames = [];
+            let iNum;
+            //ask the user for how many names
+            iNum = parseInt(prompt("How many names?"));
+            //loop that loads the array
+            for (let iCount = 0; iCount < iNum; iCount++)
+            {
+                //asNames.push(prompt("Enter the name?"));
+                asNames[iCount] = prompt("Enter the name");
+            }
+            asNames.sort();
+            console.log(asNames);
+            asNames.reverse();
+            console.log(asNames);
+        }
+        
+    </script>
+</body>
+</html>
